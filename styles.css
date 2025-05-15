@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "HelvenicaNeue";
+  src: url("assets/fonts/HelveticaNeue-Light.otf") format("light");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: "HelvenicaNeue", sans-serif;
+}
+.container {
+  max-width: 1079px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-family: "HelvenicaNeue", sans-serif;
+  color: white;
+}
+h2 {
+  font-size: 36px;
+  color: #fff;
+}
+h3 {
+  font-size: 24px;
+  color: #fff;
+}
+
+/* header */
+header {
+  background-color: #373a3c;
+}
+header > .container {
+  max-width: 1070px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav,
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.myxbox {
+  display: flex;
+  align-items: center;
+}
+
+/* dropdown */
+.dropbtn {
+  background-color: #373a3c;
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #373a3c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #252525;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #313131;
+}
+.dropbtn {
+  font-family: "HelvenicaNeue", sans-serif;
+  font-size: 16px;
+}
+/* search */
+input {
+  width: 209px;
+  height: 38px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #435766;
+  font-weight: 400;
+}
+input::placeholder {
+  font-family: "HelvenicaNeue", sans-serif;
+  padding-left: 16px;
+  opacity: 0.4;
+}
+/* hero */
+.hero {
+  padding-top: 43px;
+  background-image: url(assets/images/Star-Wars-Battlefront-II-combat.png);
+  display: flex;
+  align-items: center;
+  padding-bottom: 43px;
+  padding-right: 57px;
+  padding-left: 57px;
+}
+.hero .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .carousel{
+  padding-right: 106px;
+}
+.left-block {
+  padding-top: 178px;
+  padding-left: 306px;
+}
+.hero button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  color: #fff;
+}
+.buttons {
+  display: flex;
+  gap: 13px;
+  padding-bottom: 147px;
+  padding-top: 107px;
+}
+.watch,
+.explore {
+  background: #8dd83d;
+  border-radius: 4px;
+  border: none;
+  width: 136px;
+  height: 38px;
+  cursor: pointer;
+}
+.watch:hover,
+.explore:hover {
+  transform: scale(1.1);
+}
+.explore {
+  background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
+}
+
+/* hero2 */
+.hero2 {
+  background-image: url(assets/images/CoD-WWII.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding-bottom: 204px;
+  padding-right: 57px;
+  padding-left: 57px;
+}
+.hero2 h2 {
+  font-weight: 400;
+  font-size: 36px;
+  color: #fff;
+}
+.hero2 h3 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+.hero2 button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  color: #fff;
+}
+.hero2 .buttons{
+  padding-top: 139px;
+  padding-bottom: 0;
+}
+/* footer */
+footer {
+  background-color: #373a3c;
+  padding-top: 58px;
+  padding-bottom: 38px;
+}
+footer > .container {
+  max-width: 1200px;
+}
+
+.footer-up {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 65px;
+  padding-right: 283px;
+}
+footer h3 {
+  color: #7dd42f;
+  font-weight: 700;
+  font-size: 18px;
+  padding-bottom: 34px;
+}
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+footer .footer-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-3 h3 {
+  padding-bottom: 28px;
+}
+.icons {
+  display: flex;
+  gap: 20px;
+}
+.line {
+  stroke-width: 1px;
+  stroke: #fff;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.footer-down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
